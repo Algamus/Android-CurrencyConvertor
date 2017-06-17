@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/layout_bg">
+
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CurrencyConvInfoBox"
+        android:id="@+id/CrrncyCnvInfoBox"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:layout_marginTop="8dp">
+
+        <gokhangobus.assignment3currencyconverter.widget.WheelView
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/LeftWheel"
+            android:layout_weight="0.30" />
+        <gokhangobus.assignment3currencyconverter.widget.WheelView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/RightWheel"
+            android:layout_weight="0.29"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15">
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <EditText
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:text="1.0"
+            android:textSize="40dp"
+            android:id="@+id/LeftBox"
+            android:layout_gravity="right"
+            android:textAlignment="center"
+            android:background="#ffffff" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0.0"
+            android:layout_gravity="left"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/RightBox"
+            android:textSize="40dp"
+            android:background="#ffffff" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CurrencyConvInfoConv"
+        android:id="@+id/Converter"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

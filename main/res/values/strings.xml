@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment3CurrencyConverter</string>
+    <string name="CurrencyConvInfoBox">Please Select Currency Types:</string>
+    <string name="CurrencyConvInfoConv">Convert</string>
+</resources>
